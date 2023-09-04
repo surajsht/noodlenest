@@ -12,10 +12,10 @@ const Hero = () => {
 
           <p className="mb-6 xl:mb-8 xl:text-lg xl:leading-[27px]">
             Welcome to a world where noodles transcend mere sustenance, where
-            they become a canvas for culinary artistry. At NoodleWonders, we're
+            they become a canvas for culinary artistry. At NoodleWonders, we are
             passionate about noodles, and our mission is to bring you the
-            finest, most exquisite noodle creations you've ever tasted. Join us
-            on a journey of flavor and texture, where each bite tells a story
+            finest, most exquisite noodle creations you have ever tasted. Join
+            us on a journey of flavor and texture, where each bite tells a story
             and every bowl is a masterpiece. Explore our menu, and prepare to
             fall in love with noodles all over again.
           </p>
