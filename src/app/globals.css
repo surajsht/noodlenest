@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark-mode {
+  color: #fff;
+  background-color: #141414;
+}
+
+.dark-mode .dark-mode-toggle {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.dark-mode .dark-mode-toggle > div {
+  background-color: #000;
+}

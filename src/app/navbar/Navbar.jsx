@@ -36,7 +36,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-2">
           <div
-            className="relative h-5 w-11 border-[1px] border-[#26242e] rounded-xl cursor-pointer"
+            className="relative h-5 w-11 border-[1px] border-[#26242e] rounded-xl cursor-pointer dark-mode-toggle"
             onClick={() => toggleTheme()}
           >
             <div
