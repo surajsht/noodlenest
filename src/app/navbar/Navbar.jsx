@@ -3,11 +3,9 @@
 import { useEffect, useState } from "react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useTheme } from "next-themes";
 
 const Navbar = () => {
   let [toggle, setToggle] = useState(false);
-  const { setTheme } = useTheme();
 
   let toggleTheme = () => {
     setToggle(!toggle);
@@ -15,9 +13,9 @@ const Navbar = () => {
 
   useEffect(() => {
     if (toggle) {
-      setTheme("dark");
+      document.body.classList.add("dark-mode");
     } else {
-      setTheme("light");
+      document.body.classList.remove("dark-mode");
     }
   }, [toggle]);
 
@@ -38,11 +36,11 @@ const Navbar = () => {
 
         <div className="flex items-center gap-2">
           <div
-            className="relative h-5 w-11 bg-[#fff] rounded-xl cursor-pointer"
+            className="relative h-5 w-11 border-[1px] border-[#26242e] rounded-xl cursor-pointer"
             onClick={() => toggleTheme()}
           >
             <div
-              className={`absolute top-[50%] left-1 bottom-0 translate-y-[-50%] h-4 w-4 bg-[#000] rounded-full ${
+              className={`absolute top-[50%] left-1 bottom-0 translate-y-[-50%] h-4 w-4 bg-black rounded-full ${
                 toggle ? "translate-x-[18px]" : "translate-x-0"
               } transition duration-500`}
             ></div>
