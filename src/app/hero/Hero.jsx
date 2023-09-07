@@ -31,6 +31,8 @@ const Hero = () => {
               src="/noodle.png"
               alt="ramen-noodle"
               fill={true}
+              sizes="(max-width: 768px) 25vw, (max-width: 1200px) 50vw"
+              priority={true}
               className="object-contain"
             />
           </div>
