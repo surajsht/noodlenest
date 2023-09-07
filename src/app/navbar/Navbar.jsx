@@ -46,8 +46,13 @@ const Navbar = () => {
             ></div>
           </div>
 
-          <ShoppingCartIcon className="h-5 w-5" />
-          <MenuIcon className="h-7 w-7 lg:hidden" />
+          <button>
+            <ShoppingCartIcon className="h-5 w-5" />
+          </button>
+
+          <button className="lg:hidden">
+            <MenuIcon className="h-7 w-7" />
+          </button>
         </div>
       </div>
     </div>
